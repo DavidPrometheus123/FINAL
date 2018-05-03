@@ -1,0 +1,13 @@
+<% include ../partials/header %>
+
+<h1><%= post.title %></h1>
+<img src="<%=post.image%>">
+<h4><%= post.content %></h4>
+
+<form>
+    <input type="text" placeholder="title" name="comment[title]">
+    <input type="text" placeholder="content" name="comment[content]">
+    <input type="submit" value="Add a Comment"> 
+</form>
+
+<% include ../partials/footer %>

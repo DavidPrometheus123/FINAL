@@ -1,0 +1,14 @@
+<% include ../partials/header %>
+
+<h1>Main Page</h1>
+
+<% posts.forEach(function(post) { %>
+<h2><%=post.title%></h2>
+<img width="300" height="175" src="<%=post.image%>">
+<h4><%=post.content%></h4>
+<a href="/index/<%=post._id%>">Show More</a>
+<% }); %>
+
+
+
+<% include ../partials/footer %>
